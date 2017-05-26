@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.scorekeeper.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Darts 301 Parchess"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="24sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Red Player"
+                        android:textColor="#ffffff"
+                        android:padding="16dp"
+                        android:textSize="14sp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/team_red_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:paddingLeft="16dp"
+                        android:textColor="#ff5722"
+                        android:textSize="54sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A.1. Choose sore"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    android:textColor="#ffffff"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <HorizontalScrollView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownOne"
+                                android:padding="8dp"
+                                android:text="1"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownTwo"
+                                android:padding="8dp"
+                                android:text="2"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownThree"
+                                android:padding="8dp"
+                                android:text="3"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownFour"
+                                android:padding="8dp"
+                                android:text="4"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownFive"
+                                android:padding="8dp"
+                                android:text="5"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownSix"
+                                android:padding="8dp"
+                                android:text="6"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownSeven"
+                                android:padding="8dp"
+                                android:text="7"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownEight"
+                                android:padding="8dp"
+                                android:text="8"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownNine"
+                                android:padding="8dp"
+                                android:text="9"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownTen"
+                                android:padding="8dp"
+                                android:text="10"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownEleven"
+                                android:padding="8dp"
+                                android:text="11"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownTwelve"
+                                android:padding="8dp"
+                                android:text="12"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownThirteen"
+                                android:padding="8dp"
+                                android:text="13"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownFourteen"
+                                android:padding="8dp"
+                                android:text="14"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownFifteen"
+                                android:padding="8dp"
+                                android:text="15"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownSixteen"
+                                android:padding="8dp"
+                                android:text="16"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownSeventeen"
+                                android:padding="8dp"
+                                android:text="17"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownEighteen"
+                                android:padding="8dp"
+                                android:text="18"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownNineteen"
+                                android:padding="8dp"
+                                android:text="19"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="redThrownTwenty"
+                                android:padding="8dp"
+                                android:text="20"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A.2. Choose score multiplicator"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    android:textColor="#ffffff"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="singleScoreRed"
+                        android:padding="8dp"
+                        android:text="* 1"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="doubleScoreRed"
+                        android:padding="8dp"
+                        android:text="* 2"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="tripleScoreRed"
+                        android:padding="8dp"
+                        android:text="* 3"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B. Choose single or double bull"
+                        android:textSize="16sp"
+                        android:padding="16dp"
+                        android:textColor="#ffffff"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Single Bull"
+                        android:padding="8dp"
+                        android:onClick="redThrownSingleBull"
+                        android:textSize="16sp"
+                        />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Double Bull"
+                        android:padding="8dp"
+                        android:onClick="redThrownDoubleBull"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/for_red_to_win"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remaining"
+                        android:textColor="#ffffff"
+                        android:padding="16dp"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/remaining_for_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="301"
+                        android:textColor="#ff5722"
+                        android:padding="16dp"
+                        android:textSize="16sp"
+                        android:onClick="remainingScoreRed"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@android:color/darker_gray">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blue Player"
+                        android:textColor="#ffffff"
+                        android:padding="16dp"
+                        android:textSize="14sp" />
+
+
+                    <TextView
+                        android:id="@+id/team_blue_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:paddingLeft="16dp"
+                        android:textColor="#039be5"
+                        android:textSize="54sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A.1. Choose sore"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    android:textColor="#ffffff"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <HorizontalScrollView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownOne"
+                                android:padding="8dp"
+                                android:text="1"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownTwo"
+                                android:padding="8dp"
+                                android:text="2"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownThree"
+                                android:padding="8dp"
+                                android:text="3"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownFour"
+                                android:padding="8dp"
+                                android:text="4"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownFive"
+                                android:padding="8dp"
+                                android:text="5"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownSix"
+                                android:padding="8dp"
+                                android:text="6"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownSeven"
+                                android:padding="8dp"
+                                android:text="7"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownEight"
+                                android:padding="8dp"
+                                android:text="8"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownNine"
+                                android:padding="8dp"
+                                android:text="9"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownTen"
+                                android:padding="8dp"
+                                android:text="10"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownEleven"
+                                android:padding="8dp"
+                                android:text="11"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownTwelve"
+                                android:padding="8dp"
+                                android:text="12"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownThirteen"
+                                android:padding="8dp"
+                                android:text="13"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownFourteen"
+                                android:padding="8dp"
+                                android:text="14"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownFifteen"
+                                android:padding="8dp"
+                                android:text="15"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownSixteen"
+                                android:padding="8dp"
+                                android:text="16"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownSeventeen"
+                                android:padding="8dp"
+                                android:text="17"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownEighteen"
+                                android:padding="8dp"
+                                android:text="18"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownNineteen"
+                                android:padding="8dp"
+                                android:text="19"
+                                android:textSize="16sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="blueThrownTwenty"
+                                android:padding="8dp"
+                                android:text="20"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A.2. Choose score multiplicator"
+                    android:textSize="16sp"
+                    android:padding="16dp"
+                    android:textColor="#ffffff"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="singleScoreBlue"
+                        android:padding="8dp"
+                        android:text="* 1"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="doubleScoreBlue"
+                        android:padding="8dp"
+                        android:text="* 2"
+                        android:textSize="16sp" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="tripleScoreBlue"
+                        android:padding="8dp"
+                        android:text="* 3"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B. Choose single or double bull"
+                        android:textSize="16sp"
+                        android:padding="16dp"
+                        android:textColor="#ffffff"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Single Bull"
+                        android:padding="8dp"
+                        android:onClick="blueThrownSingleBull"
+                        android:textSize="16sp"
+                        />
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Double Bull"
+                        android:padding="8dp"
+                        android:onClick="blueThrownDoubleBull"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/for_blue_to_win"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Remaining"
+                        android:textColor="#ffffff"
+                        android:padding="16dp"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/remaining_for_blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="301"
+                        android:textColor="#039be5"
+                        android:padding="16dp"
+                        android:textSize="16sp"
+                        android:onClick="remainingScoreBlue"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:textSize="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:onClick="resetScore"/>
+
+</RelativeLayout>
